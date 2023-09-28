@@ -6,7 +6,7 @@ _ = load_dotenv(find_dotenv())
 
 api_key = os.environ['API_KEY']
 
-def get_completion(inputs, parameters=None, ENDPOINT_URL=os.environ['API_BASE']): 
+def get_completion(inputs, parameters=None, ENDPOINT_URL=os.environ['IC_API_BASE']): 
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
